@@ -1,0 +1,530 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.content {
+    width: 90%;
+    max-width: 1010px;
+    margin: 0 auto;
+}
+
+.youtube { color: #ff0000 }
+.facebook { color: #036ae3 }
+.instagram {
+    background: linear-gradient(to right, #f99f5f, #e13e66,#c62e90);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.twitter { color: #1da1f2 }
+.whatsapp { color: #00e676 }
+
+
+#header_container {
+    background: rgba(46, 33, 105, 0.99);
+    top: 0;
+    position: fixed;
+    width: 100vw;
+    z-index: 2;
+}
+
+#header_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+#logo {
+    cursor: pointer;
+}
+
+#menu_options a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: #fcf8b8;
+    transition: color 0.2s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+}
+#menu_options a:hover {
+    color: #f7ec13;
+}
+
+#slide_container {
+    height: calc(760px - 89px);
+    margin-top: 89px;
+    background: url("../img/banner.jpg") no-repeat center bottom / 620px #402b82;
+    background-attachment: fixed;
+    box-shadow: inset 0 -20px 20px rgba(0, 0, 0, 0.35);
+}
+
+.slide_img {
+    max-width: 100%;
+    background-attachment: fixed;
+}
+.slide_img1 {
+    background: #000;
+}
+
+#sobremim {
+    background: #FCFCFC;
+}
+#sobremim_content,
+#minhaspropostas_content,
+#colabore {
+    padding: 80px 0;
+}
+#sobremim_content h3 {
+    font-size: 30px;
+    text-align: center;
+    color: #4c0aa3;
+}
+#sobremim_info {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#sobremim_avatar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 36%;
+}
+
+#sobremim_img {
+    max-height: 300px;
+}
+
+#sobremim_img img {
+    border-radius: 50%;
+    max-height: 300px;
+    height: 100%;
+}
+
+#sobremim_socialmedias a {
+    text-decoration: none;
+    font-size: 35px;
+    transition: font-size 0.15s ease;
+}
+#sobremim_socialmedias a:hover {
+    font-size: 40px;
+}
+
+#sobremim_texto {
+    max-width: 60%;
+}
+#sobremim_texto p {
+    margin-bottom: 12px;
+    font-size: 18px;
+    color: #445;
+}
+
+#sobremim_button {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: #5833a2;
+}
+#sobremim_button i {
+    cursor: pointer;
+    animation: playvideo 1s ease infinite;
+}
+
+@keyframes playvideo {
+    0% {
+        font-size: 35px;
+        opacity: 0.1;
+    }
+    50% {
+        font-size: 35px;
+        opacity: 1;
+    }
+    100% {
+        font-size: 45px;
+        opacity: 0;
+    }
+}
+
+#iframe {
+    background: rgba(0, 0, 0, 0.9);
+}
+#iframe_video {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0;
+}
+#iframe iframe {
+    margin: 50px auto 0 auto;
+}
+#iframe_topo {
+    display: flex;
+    flex-direction: row;
+    color: #FFF;
+}
+#iframe_titulo {
+    flex: 1;
+    text-align: center;
+    font-size: 30px;
+}
+#close-video {
+    align-self: flex-end;
+    color: #FFF;
+    cursor: pointer;
+}
+
+#minhaspropostas {
+    background: url("../img/HalftoneClara.png") #4f07af;
+    background-attachment: fixed;
+}
+#minhaspropostas_content {
+    background: url("../img/propostas.png") no-repeat left bottom / 350px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+#minhaspropostas_content h3 {
+    font-size: 30px;
+    text-align: center;
+    color: #f7ec13;
+    align-self: center;
+}
+.minhaspropostas_texto {
+    margin-top: 50px;
+    color: #fff990;
+    font-weight: bold;
+    max-width: 600px;
+}
+.minhaspropostas_texto p { 
+    margin-bottom: 10px;
+    line-height: 25px;
+}
+
+.proposta {
+    color: #444;
+    padding: 5px;
+    background: #f7ec13;
+    border-radius: 50%;
+    width: 27px;
+    text-align: center;
+    float: left;
+    margin-right: 10px;
+    height: 25px;
+    width: 25px;
+    font-size: 14px;
+}
+
+#minhaspropostas_button {
+    align-self: center;
+    margin-right: 65px;
+    border-radius: 10px;
+    background: #f7ec13;
+    font-size: 20px;
+    cursor: default;
+    margin-top: 10px;
+    width: auto;
+}
+#minhaspropostas_button button {
+    margin: 0 5px;
+    padding: 5px;
+    width: 50px;
+    border: none;
+    font-size: 20px;
+    color: #4c0aa3;
+    background: transparent;
+    cursor: pointer;
+}
+#minhaspropostas_button button:disabled {
+    opacity: 0.4;
+    cursor: default;
+}
+
+#colabore {
+    height: 454px;
+    background: #FCFCFC;
+}
+#colabore_content h3 {
+    font-size: 30px;
+    text-align: center;
+    color: #82D;
+}
+
+#colabore_colaboracoes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+#doacao, #socialmedias {
+    color: #999;
+    width: 50%;
+}
+.doacao_descricao {
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+.doacao_titulo {
+    color: #82D;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 15px;
+}
+#doacao a {
+    margin-top: 10px;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+    position: absolute;
+    z-index: 1;
+}
+#doacao_button {
+    width: 130px;
+    padding: 15px;
+    background: #49a74d;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+}
+#doacao_button:hover {
+    opacity: 0.8;
+}
+#socialmedias_button {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-top: 45px;
+}
+#socialmedias_button div {
+    font-size: 40px;
+    margin-right: 10px;
+    transition: all 0.2s ease;
+}
+#socialmedias_button div:hover {
+    font-size: 45px;
+}
+
+footer {
+    background: #201d25;
+    color: #C5C5C5;
+    padding: 20px 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+#footer_logo {
+    margin: 10px auto;
+}
+
+#menu_mobile {
+    font-size: 26px;
+    color: #f7ec13;
+    padding: 10px;
+    border: solid 1px #f7ec13;
+    border-radius: 8px;
+}
+
+#menu_mobile_options {
+    position: absolute;
+    margin-top: 230px;
+    right: 0;
+    background: rgba(46, 33, 105, 0.99);
+    border-top: solid 1px #F1F1F1;
+    border-bottom: solid 1px #F1F1F1;
+    border-left: solid 1px #F1F1F1;
+    border-radius: 5px 0 0 5px;
+    animation: showmenu 0.2s ease;
+}
+#menu_mobile_options div {
+    padding: 5px;
+    margin: 10px;
+}
+#menu_mobile_options a {
+    color: #FCFCFC;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+@keyframes showmenu {
+    0% {
+        right: -200px;
+    }
+    100% {
+        right: 0;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+#participe {
+    background: #4fd45f;
+    padding: 50px 0;
+}
+
+#participe_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#participe_content h3{
+    color: #FFF;
+    font-size: 35px;
+}
+
+#participe_content a {
+    text-decoration: none;
+}
+
+#participe_button {
+    font-size: 18px;
+    color: #FFF;
+    background: #5833a2;
+    width: 130px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+}
+
+#participe_button:hover {
+    opacity: 0.8;
+}
+
+.icon_titulo {
+    margin-right: 20px;
+}
+
+@media screen and (min-width: 1400px) {
+    #slide_container {
+        background: url("../img/banner.png") no-repeat center 125px / 750px #402b82;
+        background-attachment: fixed;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #sobremim_info,
+    #sobremim_avata,r
+    #minhaspropostas_content,
+    #colabore_colaboracoes {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #colabore {
+        height: auto;
+    }
+    #doacao, #socialmedias {
+        width: 90%;
+    }
+    #socialmedias {
+        margin-top: 100px;
+    }
+    #minhaspropostas_content {
+        background: none;
+    }
+    #sobremim_texto,
+    #sobremim_avatar,
+    .minhaspropostas_texto  {
+        width: 100%;
+        max-width: 100%;
+        justify-content: center;
+    }
+    #sobremim_texto {
+        margin-top: 100px;
+    }
+    #minhaspropostas_button {
+        margin-right: 0;
+    }
+    #doacao_button {
+        margin-bottom: 50px;
+    }
+    #socialmedias_button {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #slide_container {
+        height: 590px;
+        background: url("../img/banner.png") no-repeat center 100% / 95vw #402b82 fixed;
+    }
+    #participe_content {
+        flex-direction: column;
+        text-align: center;
+    }
+    #participe_button {
+        margin-top: 30px;
+    }
+    #menu_options {
+        display: none;
+    }
+    #menu_mobile {
+        display: block;
+    }
+}
+@media screen and (max-width: 600px) {
+    #slide_container {
+        height: 550px;
+        background: url("../img/banner.png") no-repeat center 100% / 100vw #402b82 fixed;
+    }
+}
+@media screen and (max-width: 550px) {
+    #slide_container {
+        height: 480px;
+        background: url("../img/banner.png") no-repeat center calc(100% - 58px) / 100vw #402b82 fixed;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #slide_container {
+        height: 430px;
+        background: url("../img/banner.png") no-repeat center calc(100% - 108px) / 100vw #402b82 fixed;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #slide_container {
+        height: 380px;
+        background: url("../img/banner.png") no-repeat center calc(100% - 158px) / 100vw #402b82 fixed;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #slide_container {
+        height: 307px;
+        background: url("../img/banner.png") no-repeat center calc(100% - 230px) / 100vw #402b82 fixed;
+    }
+    #sobremim_texto {
+        margin-top: 50px;
+    }
+    #sobremim_avatar {
+        flex-direction: column-reverse;
+    }
+    #sobremim_socialmedias {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 70px;
+    }
+    #sobremim_img {
+        text-align: center;
+    }
+    #sobremim_button {
+        margin-top: 10px;
+    }
+    #sobremim_socialmedias a {
+        font-size: 45px;
+        margin-right: 10px;
+    }
+}
