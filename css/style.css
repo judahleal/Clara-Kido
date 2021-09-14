@@ -407,7 +407,7 @@ footer {
 
 @media screen and (min-width: 1400px) {
     #slide_container {
-        background: url("../img/banner.png") no-repeat center 125px / 750px #402b82;
+        background: url("../img/banner.jpg") no-repeat center 125px / 750px #402b82;
         background-attachment: fixed;
     }
 }
@@ -457,7 +457,7 @@ footer {
 @media screen and (max-width: 650px) {
     #slide_container {
         height: 590px;
-        background: url("../img/banner.png") no-repeat center 100% / 95vw #402b82 fixed;
+        background: url("../img/banner.jpg") no-repeat center 100% / 95vw #402b82 fixed;
     }
     #participe_content {
         flex-direction: column;
@@ -476,34 +476,34 @@ footer {
 @media screen and (max-width: 600px) {
     #slide_container {
         height: 550px;
-        background: url("../img/banner.png") no-repeat center 100% / 100vw #402b82 fixed;
+        background: url("../img/banner.jpg") no-repeat center 100% / 100vw #402b82 fixed;
     }
 }
 @media screen and (max-width: 550px) {
     #slide_container {
         height: 480px;
-        background: url("../img/banner.png") no-repeat center calc(100% - 58px) / 100vw #402b82 fixed;
+        background: url("../img/banner.jpg") no-repeat center calc(100% - 58px) / 100vw #402b82 fixed;
     }
 }
 
 @media screen and (max-width: 500px) {
     #slide_container {
         height: 430px;
-        background: url("../img/banner.png") no-repeat center calc(100% - 108px) / 100vw #402b82 fixed;
+        background: url("../img/banner.jpg") no-repeat center calc(100% - 108px) / 100vw #402b82 fixed;
     }
 }
 
 @media screen and (max-width: 450px) {
     #slide_container {
         height: 380px;
-        background: url("../img/banner.png") no-repeat center calc(100% - 158px) / 100vw #402b82 fixed;
+        background: url("../img/banner.jpg") no-repeat center calc(100% - 158px) / 100vw #402b82 fixed;
     }
 }
 
 @media screen and (max-width: 360px) {
     #slide_container {
         height: 307px;
-        background: url("../img/banner.png") no-repeat center calc(100% - 230px) / 100vw #402b82 fixed;
+        background: url("../img/banner.jpg") no-repeat center calc(100% - 230px) / 100vw #402b82 fixed;
     }
     #sobremim_texto {
         margin-top: 50px;
